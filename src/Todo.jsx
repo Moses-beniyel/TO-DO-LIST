@@ -7,14 +7,14 @@ function Todo() {
 
   function handleInput(e) {
     setNewTask(e.target.value);
-    console.log(e.target.value);
+    
   }
 
   function addTask() {
     if (newTask !== "") {
       setTask((task) => [...task, newTask]);
       setNewTask("");
-      alert("this is my notification")
+      
     }
   }
 
